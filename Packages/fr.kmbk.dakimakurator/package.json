@@ -5,7 +5,8 @@
   "description": "Dakimakura generator for VRC with player scan textures",
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.worlds": "3.9.0"
+    "com.vrchat.worlds": "3.9.0",
+    "com.poiyomi.toon": "9.2.79^"
   },
   "author": {
     "name": "kamaboko117",
