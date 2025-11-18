@@ -1,12 +1,13 @@
 {
   "name": "fr.kmbk.dakimakurator",
   "displayName": "Dakimakurator MKII",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dakimakura generator for VRC with player scan textures",
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.worlds": "3.9.0",
-    "com.poiyomi.toon": "9.2.79^"
+    "com.vrchat.worlds": "3.9.0^",
+    "com.poiyomi.toon": "9.2.79^",
+    "com.vrchat.udonsharp": "1.1.9^"
   },
   "author": {
     "name": "kamaboko117",
