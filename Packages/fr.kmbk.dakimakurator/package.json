@@ -1,0 +1,18 @@
+{
+  "name": "fr.kmbk.dakimakurator",
+  "displayName": "Dakimakurator MKII",
+  "version": "0.0.1",
+  "description": "Dakimakura generator for VRC with player scan textures",
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.worlds": "3.9.0"
+  },
+  "author": {
+    "name": "kamaboko117",
+    "email": "kamaboko117@outlook.com"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "localPath": "F:\\VCC\\DakimakuratorMKII\\Packages\\fr.kmbk.dakimakurator",
+  "unity": "2022.3"
+}
