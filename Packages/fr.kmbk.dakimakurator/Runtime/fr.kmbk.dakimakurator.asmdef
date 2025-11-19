@@ -1,10 +1,7 @@
 {
   "name": "fr.kmbk.dakimakurator",
   "references": [
-    "UdonSharp",
-    "UdonSharpBehaviour",
-    "UdonSyncedAttribute",
-    "UdonSynced",
+    "GUID:99835874ee819da44948776e0df4ff1d",
     "VRC.SDK3",
     "VRC.SDKBase"
   ],

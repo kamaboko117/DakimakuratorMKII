@@ -1,7 +1,7 @@
 {
   "name": "fr.kmbk.dakimakurator",
   "displayName": "Dakimakurator MKII",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dakimakura generator for VRC with player scan textures",
   "gitDependencies": {},
   "vpmDependencies": {
