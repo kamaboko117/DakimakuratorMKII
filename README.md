@@ -1,76 +1,51 @@
-# VPM Package Template
+<p align="center">
+  <img height="200" src="https://github.com/kamaboko117/DakimakuratorMKII/blob/main/Packages/fr.kmbk.dakimakurator/Runtime/textures/DAKIMAKURATORMKII.png">
+</p> 
+<p align="center">
+A dakimakura generator for VRC with player scan textures
+</p>
+<p align="center">
+<a href="https://kamaboko117.github.io/VPMListing/">Add to VRChat's Creator Companion</a>
+</p>
 
-Starter for making Packages, including automation for building and publishing them.
+---
 
-Once you're all set up, you'll be able to push changes to this repository and have .zip and .unitypackage versions automatically generated, and a listing made which works in the VPM for delivering updates for this package. If you want to make a listing with a variety of packages, check out our [template-package-listing](https://github.com/vrchat-community/template-package-listing) repo.
+[![Watch the video](https://img.youtube.com/vi/v6Q7heUiMVQ/hqdefault.jpg)](https://www.youtube.com/watch?v=v6Q7heUiMVQ)
+
+---
 
 ## ▶ Getting Started
 
-* Press [![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package/generate)
-to start a new GitHub project based on this template.
-  * Choose a fitting repository name and description.
-  * Set the visibility to 'Public'. You can also choose 'Private' and change it later.
-  * You don't need to select 'Include all branches.'
-* Clone this repository locally using Git.
-  * If you're unfamiliar with Git and GitHub, [visit GitHub's documentation](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources) to learn more.
-* Add the folder to Unity Hub and open it as a Unity Project.
-* After opening the project, wait while the VPM resolver is downloaded and added to your project.
-  * This gives you access to the VPM Package Maker and Package Resolver tools.
+* Add Dakimakurator MKII from the [listing](https://kamaboko117.github.io/VPMListing/)
+* From VRChat's Creator Companion, add the package to yout project
+* In Unity, you will find the prefab in `Packages/fr.kmbk.dakimakurator/Runtime` (you can follow the video "tutorial" above)
+  * If you don't have Text Mesh Pro yet, you need to install it => place the prefab, in the hierarchy, open it, open `Scanner`, look for `UI`, enable it, it should show the TMP install modal. Once you're done, you can disable `UI` again.
+  * Sometimes, the sdk is weird and will tell you the dakimakuras have empty scripts or what not. in such cases => open the prefab in the hierarchy again, open `Pillow Pool`, then click through each pillow (you can click on the first one and then use the `down arrow`). This is not a joke btw, this is real SDK Behavior.
+* Profit
 
-## 🚇 Migrating Assets Package
-Full details at [Converting Assets to a VPM Package](https://vcc.docs.vrchat.com/guides/convert-unitypackage)
 
-## ✏️ Working on Your Package
+## PLEASE CONTRIBUTE IF YOU CAN
 
-* Delete the "Packages/com.vrchat.demo-template" directory or reuse it for your own package.
-  * If you reuse the package, don't forget to rename it and add generated meta files to your repository!
-* Update the `.gitignore` file in the "Packages" directory to include your package.
-  * For example, change `!com.vrchat.demo-template` to `!com.username.package-name`.
-  * `.gitignore` files normally *exclude* the contents of your "Packages" directory. This `.gitignore` in this template show how to *include* the demo package. You can easily change this out for your own package name.
-* Open the Unity project and work on your package's files in your favorite code editor.
-* When you're ready, commit and push your changes.
-* Once you've set up the automation as described below, you can easily publish new versions.
+I'm not really good at Unity, VRC scripting, 3D modeling... anything needed to make this prefab basically, so if you want to improve it PLEASE DO OPEN A PULL REQUEST!!
 
-## 🤖 Setting up the Automation
+if you find a bug, please report it, I'll try and fix what I can
 
-Create a repository variable with the name and value described below.
-For details on how to create repository variables, see [Creating Configuration Variables for a Repository](https://docs.github.com/en/actions/learn-github-actions/variables#creating-configuration-variables-for-a-repository).
-Make sure you are creating a **repository variable**, and not a **repository secret**.
 
-* `PACKAGE_NAME`: the name of your package, like `com.vrchat.demo-template`.
+## Known Limitations
 
-Finally, go to the "Settings" page for your repo, then choose "Pages", and look for the heading "Build and deployment". Change the "Source" dropdown from "Deploy from a branch" to "GitHub Actions".
+* Late joiners will not be able to sync their textures, it's not really possible to have textures as synced variables (I think?)
+* People will see whatever they see avatars as, if you block someone's avatar and they scan themselves, their avatar will not appear on the pillow, if someone's avatar is showing as an impostor, then you will also see an impostor on the texture, etc...
+* If you want to be able to burn the pillows, you need to setup a trigger on layer 23 (you might need to create this layer first). It doesn't matter how you name it, as long as it's layer 23, if you want to change this you'll have to modify the script directly.
+* 20 pillows max ! (you can change this if you add more pillows to the pool)
+* One person at a time ! (Or not but this might give you an unexpected texture)
+* Dakimakurator MKII is not responsible for any harm occuring while operating the scanner, smelling pillows, scanning while wearing metallic objects. The pillows are very flammable, please be careful 
 
-That's it!
-Some other notes:
-* We highly recommend you keep the existing folder structure of this template.
-  * The root of the project should be a Unity project.
-  * Your packages should be in the "Packages" directory.
-  * If you deviate from this folder structure, you'll need to update the paths that assume your package is in the "Packages" directory on lines 24, 38, 41 and 57.
-* If you want to store and generate your web files in a folder other than "Website" in the root, you can change the `listPublicDirectory` item [here in build-listing.yml](.github/workflows/build-listing.yml#L17).
+## How much MONEYZ
 
-## 🎉 Publishing a Release
+This package is free and distributed under a CC-BY-NC license. For more info, check the license directly. Please credit me with a link to the package. If you have an UI at the entrance of your world, that's the perfect place to credit the package (and other packages/assets that you used). I give this for free so that anyone can use it, but if you DO have money, consider a donation on [Buy me a Coffee](buymeacoffee.com/kamaboko). Any amount that you think is fair.
 
-You can make a release by running the [Build Release](.github/workflows/release.yml) action. The version specified in your `package.json` file will be used to define the version of the release.
+DO NOT SELL THIS PACKAGE, I WILL FIND YOU, THIS IS NOT A JOKE
 
-## 📃 Rebuilding the Listing
+## Customizing the prefab
 
-Whenever you make a change to a release - manually publishing it, or manually creating, editing or deleting a release, the [Build Repo Listing](.github/workflows/build-listing.yml) action will make a new index of all the releases available, and publish them as a website hosted fore free on [GitHub Pages](https://pages.github.com/). This listing can be used by the VPM to keep your package up to date, and the generated index page can serve as a simple landing page with info for your package. The URL for your package will be in the format `https://username.github.io/repo-name`.
-
-## 🏠 Customizing the Landing Page (Optional)
-
-The action which rebuilds the listing also publishes a landing page. The source for this page is in `Website/index.html`. The automation system uses [Scriban](https://github.com/scriban/scriban) to fill in the objects like `{{ this }}` with information from the latest release's manifest, so it will stay up-to-date with the name, id and description that you provide there. You are welcome to modify this page however you want - just use the existing `{{ template.objects }}` to fill in that info wherever you like. The entire contents of your "Website" folder are published to your GitHub Page each time.
-
-## 💻 Technical Stuff
-
-You are welcome to make your own changes to the automation process to make it fit your needs, and you can create Pull Requests if you have some changes you think we should adopt. Here's some more info on the included automation:
-
-### Build Release Action
-[release.yml](/.github/workflows/release.yml)
-
-This is a composite action combining a variety of existing GitHub Actions and some shell commands to create both a .zip of your Package and a .unitypackage. It creates a release which is named for the `version` in the `package.json` file found in your target Package, and publishes the zip, the unitypackage and the package.json file to this release.
-
-### Build Repo Listing
-[build-listing.yml](.github/workflows/build-listing.yml)
-
-This is a composite action which builds a vpm-compatible [Repo Listing](https://vcc.docs.vrchat.com/vpm/repos) based on the releases you've created. In order to find all your releases and combine them into a listing, it checks out [another repository](https://github.com/vrchat-community/package-list-action) which has a [Nuke](https://nuke.build/) project which includes the VPM core lib to have access to its types and methods. This project will be expanded to include more functionality in the future - for now, the action just calls its `BuildRepoListing` target.
+If you know what you're doing, feel free to customize every aspect of the prefab (voicelines, 3D meshes, UI...). Just make sure that you don't remove "by kamaboko117" from any UI that you want to use instead. Also, be aware that if you change the prefab, future updates may break some stuff.
