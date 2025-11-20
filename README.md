@@ -10,7 +10,7 @@ A dakimakura generator for VRC with player scan textures
 
 ---
 
-[![Watch the video](https://img.youtube.com/vi/v6Q7heUiMVQ/hqdefault.jpg)](https://www.youtube.com/watch?v=v6Q7heUiMVQ)
+[![Watch the video](https://cdn.discordapp.com/attachments/1036599465429172244/1441206915823566968/SFSFDSFDSFSDFDS.png?ex=6920f409&is=691fa289&hm=e8156bf3bac1ea895b335c6ad515e0537a30fb892fb6e98e3ceff637fabbbf82&)](https://www.youtube.com/watch?v=v6Q7heUiMVQ)
 
 ---
 
