@@ -5,6 +5,7 @@ using VRC.SDK3.UdonNetworkCalling;
 using VRC.SDKBase;
 using VRC.Udon.Common.Interfaces;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class Dakimakurator : UdonSharpBehaviour
 {
     public GameObject ui;
