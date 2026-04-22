@@ -10,7 +10,7 @@ A dakimakura generator for VRC with player scan textures
 
 ---
 
-[![Watch the video](https://img.youtube.com/vi/v6Q7heUiMVQ/hqdefault.jpg)](https://www.youtube.com/watch?v=v6Q7heUiMVQ)
+[![Watch the video](https://cdn.discordapp.com/attachments/1036599465429172244/1441206915823566968/SFSFDSFDSFSDFDS.png?ex=6920f409&is=691fa289&hm=e8156bf3bac1ea895b335c6ad515e0537a30fb892fb6e98e3ceff637fabbbf82&)](https://www.youtube.com/watch?v=v6Q7heUiMVQ)
 
 ---
 
@@ -42,7 +42,7 @@ if you find a bug, please report it, I'll try and fix what I can
 
 ## How much MONEYZ
 
-This package is free and distributed under a CC-BY-NC license. For more info, check the license directly. Please credit me with a link to the package. If you have an UI at the entrance of your world, that's the perfect place to credit the package (and other packages/assets that you used). I give this for free so that anyone can use it, but if you DO have money, consider a donation on [Buy me a Coffee](buymeacoffee.com/kamaboko). Any amount that you think is fair.
+This package is free and distributed under a CC-BY-NC license. For more info, check the license directly. Please credit me with a link to the package. If you have an UI at the entrance of your world, that's the perfect place to credit the package (and other packages/assets that you used). I give this for free so that anyone can use it, but if you DO have money, consider a donation on [Buy me a Coffee](https://buymeacoffee.com/kamaboko). Any amount that you think is fair.
 
 DO NOT SELL THIS PACKAGE, I WILL FIND YOU, THIS IS NOT A JOKE
 
